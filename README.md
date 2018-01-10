@@ -8,6 +8,8 @@
 **需要安装NODE**
 <http://nodejs.cn/download/>
 
->第一次使用github写的有点不堪入目,多担待。
+>第一次使用github写的有点不堪入目,多担待
+
 >@Author：FlyingBig
+
 > 一枚刚踏上前端坑的程序猿
