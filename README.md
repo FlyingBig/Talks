@@ -5,5 +5,5 @@
 >3. 使用npm install
 >4. 启动服务node server.js 然后在网站上输入localhost:8888
 
-*需要安装NODE*
-下载node http://nodejs.cn/download/
+**需要安装NODE**
+下载node <http://nodejs.cn/download/>
