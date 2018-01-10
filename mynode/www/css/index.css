@@ -1,0 +1,288 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: #5E5E5E;
+	font-family: '微软雅黑';
+}
+div,textarea{
+	box-sizing: border-box;
+}
+li{
+	list-style-type: none;
+}
+input,textarea,select{
+	outline: none;
+}
+/* mask */
+.cqy-mask{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0,0,0,.5);
+}
+.cqy-login{
+	background-color: #fff;
+	width: 30%;
+	height: 45%;
+	border-radius: 5px;
+	padding-top: 10px;
+}
+.cqy-login h3{
+	text-align: center;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #C6C6C6;
+}
+.cqy-hh,
+.cqy-hhh{
+	margin-top: 10px;
+}
+.cqy-hh p,
+.cqy-hhh p{
+	text-align: center;
+}
+.cqy-hh input,
+.cqy-hhh input{
+	display: block;
+	width: 80%;
+	height: 28px;
+	font-size: 14px;
+	padding-left: 5px;
+	margin: 10px auto 8px auto;
+}
+.cqy-begin{
+	display: block;
+	border-radius: 3px;
+	width: 81%;
+	margin: 10px auto 8px auto;
+	height: 32px;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+	background-color: #51B6D4;
+	cursor: pointer;
+}
+.cqy-exit{
+	display: block;
+	width: 81%;
+	height: 32px;
+	line-height: 30px;
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+	background-color: #383838;
+	cursor: pointer;
+}
+/* main */
+.cqy-chatbox{
+	position: absolute;
+	left: 100px;
+	right: 100px;
+	height: 600px;
+	background-color: #2D2D2D;
+}
+.cqy-header{
+	height: 60px;
+	background: linear-gradient(top, #D9D9D9, #9F9F9F);  
+	background: -moz-linear-gradient(top, #D9D9D9, #9F9F9F);  
+	background: -webkit-linear-gradient(top, #D9D9D9, #9F9F9F);  
+}
+.cqy-usermeg{
+	width: 203px;
+	height: 100%;
+	border-right: 2px solid #BFBFBF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cqy-userimg{
+	width: 40px;
+	height: 40px;
+	border-radius: 3px;
+	background-image: url('../imgs/youke.jpg');
+	background-size: 100%;
+	border: 1px solid #ADAEA9;
+}
+.cqy-userbsc{
+	width: 120px;
+	height: 40px;
+	margin-left: 5px;
+	font-size: 13px;
+}
+.cqy-username{
+	margin-bottom: 3px;
+}
+.cqy-middle{
+	height: 540px;
+	display: flex;
+}
+.cqy-userlist{
+	width: 202px;
+	height: 100%;
+	color: #fff;
+}
+.cqy-title{
+	height: 35px;
+	line-height: 35px;
+	background-color: #212121;
+	padding-left: 10px;
+	margin-top: 5px;
+}
+.cqy-content{
+	height: 100px;
+	font-size: 13px;
+	padding: 10px 8px;
+}
+.cqy-online{
+	height: 250px;
+}
+.cqy-serachuser{
+	height: 80px;
+}
+.cqy-online li,
+.cqy-serachuser li{
+	display: flex;
+	align-items: center;
+	color: #888887;
+	padding: 5px 0 5px 10px;
+}
+.cqy-online li:hover,
+.cqy-serachuser li:hover{
+	background-color: #AB8317;
+	color: #E2DEDE;
+}
+.cqy-online  .cqy-userdetail,
+.cqy-serachuser .cqy-userdetail{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url("../imgs/youke1.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-right: 8px;
+}
+.cqy-userndetailame{
+	font-size: 14px;
+}
+/* Search Users */
+.cqy-suser{
+	position: relative;
+}
+.cqy-suser input{
+	width: 90%;
+	height: 20px;
+	border: none;
+	color: #E2DEDE;
+	padding-left: 5px;
+	border-bottom: 2px solid #535353;
+	border-right: 2px solid #626262;
+	border-left: 2px solid #2C2C2C;
+	border-top: 2px solid #2C2C2C;
+	background: linear-gradient(top, #212121, #2D2D2D);  
+	background: -moz-linear-gradient(top, #212121, #2D2D2D);  
+	background: -webkit-linear-gradient(top, #212121, #2D2D2D);  
+}
+.cqy-suser .cqy-search{
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	background-image: url("../imgs/search_001.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+/* We chat */
+.cqy-wechat{
+	flex-grow: 1;
+	background-color: #F0F0F0;
+}
+.cqy-system-meg{
+	margin: 5px;
+	font-size: 14px;
+	color: red;
+}
+.cqy-outname{
+	color: #34D729;
+}
+.cqy-talkname{
+	margin-right: 10px;
+}
+.cqy-talkname1{
+	margin-left: 10px;
+}
+.cqy-chatcontent{
+	height: 70%;
+	overflow-y: auto;
+}
+.cqy-othertalk,
+.cqy-metalk{
+	display: flex;
+	align-items: center;
+	margin-top: 8px;
+	font-size: 13px;
+}
+.cqy-othertalk > p,
+.cqy-metalk > p{
+	width: 600px;
+	margin-top: 5px;
+}
+.cqy-metalk{
+	justify-content: flex-end;
+	text-align: right;
+}
+.cqy-othertalk:after,
+.cqy-metalk:after{
+	content: "";
+	display: block;
+	width: 0;
+	clear: both;
+	overflow: hidden;
+}
+.cqy-chatcontent img.cqy-talk-s{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin:  0 5px;
+}
+.cqy-userwrite{
+	height: 30%;
+	background-color: #fff;
+}
+.cqy-userwrite textarea{
+	width: 99%;
+	height: 80%;
+	border: none;
+	padding-top: 4px;
+	padding-left: 8px;
+	font-size: 13px;
+	resize: none;
+}
+.cqy-user-dos{
+	display: flex;
+	justify-content: flex-end;
+	height: 20%;
+	background-color: #F0F0F0;
+}
+.cqy-user-dos > a{
+	display: inline-block;
+	width: 70px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	background-color: #EBF1F6;
+	border: 1px solid #8C9EB0;
+	margin-right: 15px;
+	margin-top: 2px;
+	cursor: pointer;
+}

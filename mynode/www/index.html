@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TEST</title>
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" type="text/css" href="./css/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="js/socket.io.js"></script>
+	<script type="text/javascript" src="js/mychat.js"></script>
+</head>
+<body>
+	<div class="cqy-mask">
+		<div class="cqy-login">
+			<h3>欢迎来到德莱联盟！</h3>
+			<div class="cqy-hh"><p>给自己取一个个性名字吧</p><input type="text" /></div>
+			<div class="cqy-hhh"><p>用一段话介绍你自己吧</p><input type="text" /></div>
+			<div><a class="cqy-begin" onclick="mychat.checkname(this)">开始聊天</a></div>
+			<div><a class="cqy-exit" onclick="mychat.loginout()">退出</a></div>
+		</div>
+	</div>
+	<div class="cqy-chatbox">
+		<div class="cqy-header">
+			<div class="cqy-usermeg">
+				<div class="cqy-userimg"></div>
+				<div class="cqy-userbsc">
+					<div class="cqy-username"></div>
+					<div class="cqy-userqx"></div>
+				</div>
+			</div>
+		</div>
+		<div class="cqy-middle">
+			<div class="cqy-userlist">
+				<div class="cqy-gk">
+					<div class="cqy-title">公告贴士</div>
+					<div class="cqy-content">
+						老子吃火锅，你吃火锅底料。
+						我对你笑呵呵，是因为我讲礼貌。
+					</div>
+				</div>
+				<div class="cqy-gk">
+					<div class="cqy-title">在线用户</div>
+					<div class="cqy-online">
+						<ul>
+							<!-- <li><span class="cqy-userdetail"></span><span class="cqy-userndetailame">用户1</span></li> -->
+						</ul>
+					</div>
+				</div>
+				<div class="cqy-gk">
+					<div class="cqy-title cqy-suser"><input placeholder="查找用户"/><span class="cqy-search"></span></div>
+					<div class="cqy-serachuser">
+						<ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="cqy-wechat">
+				<div class="cqy-chatcontent">
+					<!-- <div class="cqy-system-meg"><span>系统提示: 老铁-<span>xxxx</span> 离开本聊天室。</span></div> -->
+					<!-- <div class="cqy-othertalk">
+						<span><img class="cqy-talk-s cqy-left" src="imgs/youke1.jpg"></span>
+						<p>Laura会爱是不撒都不阿萨德不碍事吧 带伞 </p>
+					</div>
+					<div class="cqy-metalk">						
+						<p>Laura会爱是不撒都不阿萨德不碍不撒都不阿萨德不碍事吧 带伞 不撒都不阿萨德不碍事吧 带伞 不撒都不阿萨德不碍事吧 带伞 不撒都不阿萨德不碍事吧 带伞 事吧 带伞 </p>
+						<span><img class="cqy-talk-s cqy-right" src="imgs/youke1.jpg"></span>
+					</div> -->
+				</div>
+				<div class="cqy-userwrite">
+					<textarea id="cqy-ipt"></textarea>
+					<div class="cqy-user-dos">
+						<a id="cqy-sendmsg" onclick="mychat.sendmeg()">发送</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	$(function(){
+		//滚动条生成
+		$(".cqy-serachuser").mCustomScrollbar();
+	})
+</script>

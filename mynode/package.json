@@ -1,0 +1,21 @@
+{
+  "name": "testsct",
+  "version": "1.0.0",
+  "description": "Just do it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jackchen",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "socket.io": "^2.0.3",
+    "webpack": "^3.5.5"
+  }
+}
