@@ -1,4 +1,4 @@
-*{
+﻿*{
 	padding: 0;
 	margin: 0;
 }
@@ -286,3 +286,4 @@ input,textarea,select{
 	margin-top: 2px;
 	cursor: pointer;
 }
+.other{}
